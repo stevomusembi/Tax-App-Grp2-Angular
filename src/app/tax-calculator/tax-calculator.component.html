@@ -1,0 +1,79 @@
+
+<div class="container">
+    <h4>Calculates your PAYE and Net Salary</h4>
+    <form>
+    <div>
+        <label >Enter your Gross Salary</label>
+        <input type = "text"  name="gross" [(ngModel)] = "gross" placeholder="Enter Gross salary">
+        <button  (click)="calculate()" class="btn btn-primary mt-4">Submit</button>
+
+      </div>
+    <div >
+        <label >Net Pay</label>
+        <input  class="form-control"  placeholder="Total" value="{{ netPay}}">
+    </div>
+    <div >
+      <label >Nssf Contribution</label>
+      <input  class="form-control"  placeholder="Total" value="{{ nssf }}">
+    </div>
+    <div >
+        <label >Taxable Income</label>
+        <input  class="form-control"  placeholder="Total" value="{{ taxable }}">
+    </div> 
+    <div >
+        <label >Tax Before Relief</label>
+        <input  class="form-control"  placeholder="Total" value="{{ taxBeforeRelief}}">
+    </div>
+    <div >
+        <label >Personal Relief</label>
+        <input  class="form-control"  placeholder="Total" value="{{ personalRelief }}">
+    </div>
+     
+    <div>
+        <label >Insurance/NHIF Relief</label>
+        <input  class="form-control"  placeholder="Total" value="{{ insurance }}">
+    </div>
+    <div >
+        <label >PAYE:</label>
+        <input  class="form-control"  placeholder="Total" value="{{ paye }}">
+    </div>
+    <div >
+        <label >NHIF Contribution:</label>
+        <input  class="form-control"  placeholder="Total" value="{{ nhif }}">
+    </div>
+     
+      </form>
+
+
+
+
+    <!-- <div class="salary-form">
+        <p>   Enter Your Gross Salary:  </p>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Favorite food</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field>
+        <input type="number" placeholder=" Enter Your Gross Salary" id="gross-salary">
+        <button onclick="calculate()" class="btn-1">Calculate</button>
+    </div>
+    <div class="breakdown">
+        <div class="breakdown-info">
+            <div class="info"> <p>Net Pay: </p><input type="text" id="netpay" class="input-size"></div>
+        
+            <div class="info"> <p>NSSF Contribution: </p><input id="nssf-contribution" type="text" class="input-size"></div>
+        
+            <div class="info"> <p>Taxable Income: </p><input id="taxable-income" type="text" class="input-size"></div>
+        
+            <div class="info"> <p>Tax Before Relief:</p><input id="tax-before-relief" type="text" class="input-size"></div>
+        
+            <div class="info"> <p>Personal Relief: </p><input id="personal-relief" type="text" class="input-size" ></div>
+        
+            <div class="info"> <p>Insurance/NHIF Relief: </p><input  id="insurance" type="text"  class="input-size"></div>
+        
+            <div class="info"> <p>PAYE: </p><input  id="paye" type="text"  class="input-size"></div>
+        
+            <div class="info"> <p>NHIF Contribution:</p><input id="nhif-contribution" type="text"  class="input-size"></div>
+        </div>
+  </div><br>
+  </div> -->

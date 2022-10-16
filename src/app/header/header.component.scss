@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    background-color: rgb(238, 232, 232);
+    justify-content: space-around;
+    align-items: center;
+    img{
+        width: 100px;
+    }
+    
+}
+.nav {
+    ul{
+
+        display: flex;
+        justify-content: space-between;
+        
+
+        li{
+            list-style: none;
+            padding: 20px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    place-items: center;
+}
+.gross-salary-form{
+    border: rgb(168, 167, 167) solid;
+    height: 50px;
+}
+.tax-breakdown-card{
+    background-color: rgb(183, 205, 224);
+    margin: 20px 50px 20px 0px;
+    padding: 20px;
+}
+.tax-info{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+}
