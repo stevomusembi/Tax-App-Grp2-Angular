@@ -22,6 +22,8 @@ calculate()
   this.taxBeforeRelief = this.taxamount()
   this.paye = this.payeCalculation();
   this.netPay = this.netPayCalculation()
+  console.log(sessionStorage.getItem('netPay'));
+
 }
 taxamount():number{
     if(this.taxable > 24000){
@@ -49,7 +51,10 @@ payeCalculation():number{
 } 
 }
 netPayCalculation():number{
-  return this.netPay = this.taxable -(parseInt(this.nssf)  + (this.taxBeforeRelief) + 210);
+  this.netPay = this.taxable -(parseInt(this.nssf)  + (this.taxBeforeRelief) + 210);
+  sessionStorage.setItem('netPay',this.netPay.toString());
+  return this.netPay
+
  
 }
 

@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    place-items: center;
+}
+.net-salary-form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 16px;
+}
+.net-input{
+    margin: 0 10px;
+    width: 150px;
+    height: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.expenses h4{
+    font-weight: bold;
+    padding: 10px;
+}
+.balance{
+    margin: 10px;
+    p{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+span{
+    margin: 10px;
+    font-size: 20px;
+    color: #595b83;
+    background: #fff;
+    padding: 10px;
+    height: 20px;
+}

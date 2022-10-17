@@ -1,2 +1,21 @@
-<h2>Bill manager</h2>
-<p>Manage your monthly bills</p>
+<div class="container">
+    
+    <div class="net-salary-form">
+        <label>Your Net Salary is</label> 
+        <input type = "text" [(ngModel)] = "netPays" name="net" placeholder="Your netsalary" class="net-input">
+    </div>
+    <div class="expenses">
+        <hr>
+        <h4>Enter Your Monthly Bills:</h4>
+        <div>
+            <app-add-bill-item (formSubmit)="addItem($event)"></app-add-bill-item>
+        </div>
+        
+    </div>
+   
+   <div class="balance">
+       <p>Your Current Balance is:  <span> {{totalBudget}}</span></p>
+   </div>
+    <app-bills-list  [billItems]="billItems" (delete)="deleteItem($event)" (update)="updateItem($event)"></app-bills-list>
+    
+</div>

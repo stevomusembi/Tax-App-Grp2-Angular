@@ -1,0 +1,17 @@
+
+  <div class="root">
+    <div class="budget-item" >
+
+      <div class="description">
+        <p>{{ item.description }}</p>
+      </div>
+      <div class="amount">
+        <p>{{ item.amount }}</p>
+      </div>
+    </div>
+  
+    <div class = item-buttons  >
+      <button  (click)="onItemClick()"> Edit Bill</button>
+      <button (click)="onDeleteButtonClick()"> Delete Bill</button>
+    </div>
+  </div>

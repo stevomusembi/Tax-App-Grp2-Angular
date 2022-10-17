@@ -1,0 +1,11 @@
+
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <div class="bills-input-form">  
+        <input type="text" required name="description" class="input" placeholder="Bill Name" [ngModel]="item.description">
+        <input type="number" required name="amount" style="width: 100px;" class="input" placeholder="Bill Amount" [ngModel]="item.amount">
+            <button type="submit" class="button" [ngClass]="{ 'is-primary': isNewItem, 'is-success': !isNewItem }" [disabled]="!itemForm.valid">
+            <p *ngIf="isNewItem">Add</p>
+            <p *ngIf="!isNewItem">Save</p>
+          </button>
+      </div>
+  </form>

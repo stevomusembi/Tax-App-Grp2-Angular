@@ -1,0 +1,18 @@
+<section class="bill-items-section">
+    <div class="bill-items-container">
+  
+      <div class="expenses">
+        <h4>Your Bills: </h4>
+        <div class="bill-items">
+          <div *ngFor="let item of billItems">
+            <app-bill-item
+              [item]="item"
+              (deleteButtonClick)="onDeleteButtonClicked(item)"
+              (itemClick)="onCardClicked(item)"
+              style="display:block; margin-bottom: 20px">
+            </app-bill-item>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </section>

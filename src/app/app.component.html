@@ -1,14 +1,14 @@
-<div>
+<div class=" container">
 <app-header>
-    
 </app-header>
+
 <nav class="navs">
     <a class="button"
        routerLink="/tax-calculator"
        routerLinkActive="activebutton"
        ariaCurrentWhenActive="page">
       Tax calculator
-    </a> |
+    </a> 
     <a class="button"
        routerLink="/bill-manager"
        routerLinkActive="activebutton"
@@ -16,6 +16,6 @@
       Bill Manager
     </a>
   </nav>
-  <!-- <app-team-members></app-team-members> -->
   <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </div>

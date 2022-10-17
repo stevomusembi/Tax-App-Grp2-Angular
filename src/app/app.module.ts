@@ -12,6 +12,13 @@ import { BillManagerComponent } from './bill-manager/bill-manager.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { BillsListComponent } from './bills-list/bills-list.component';
+import { BillItemComponent } from './bills-list/bill-item/bill-item.component';
+import { EditBillComponent } from './edit-bill/edit-bill.component';
+import { AddBillItemComponent } from './add-bill-item/add-bill-item.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +27,12 @@ import { MatInputModule } from '@angular/material/input';
     TaxCalculatorComponent,
     BillManagerComponent,
     TeamMembersComponent,
+    BillsListComponent,
+    BillItemComponent,
+    EditBillComponent,
+    AddBillItemComponent,
+    FooterComponent,
+    
    
   ],
   imports:[
@@ -28,6 +41,10 @@ import { MatInputModule } from '@angular/material/input';
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+      
     RouterModule.forRoot([
       {path: 'tax-calculator', component: TaxCalculatorComponent},
       {path: 'bill-manager', component: BillManagerComponent},

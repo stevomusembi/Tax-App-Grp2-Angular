@@ -1,0 +1,25 @@
+.bills-input-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    input{
+        margin: 10px;
+        width: 150px;
+        height: 15px;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    button{
+        background-color:#595b83;
+        padding: 6px 18px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: rgba(255, 255, 255, 0) 1px ;
+        font-size: larger;
+        p{
+            margin: 0;
+        }
+    }
+}
