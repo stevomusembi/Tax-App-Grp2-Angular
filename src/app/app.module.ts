@@ -18,7 +18,9 @@ import { EditBillComponent } from './edit-bill/edit-bill.component';
 import { AddBillItemComponent } from './add-bill-item/add-bill-item.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -44,13 +46,14 @@ import { FooterComponent } from './footer/footer.component';
     MatDialogModule,
     MatIconModule,
     BrowserAnimationsModule,
-      
+    MatCardModule,
     RouterModule.forRoot([
       {path: 'tax-calculator', component: TaxCalculatorComponent},
       {path: 'bill-manager', component: BillManagerComponent},
       {path: 'team-members', component: TeamMembersComponent},
       {path: '', redirectTo: '/tax-calculator', pathMatch: 'full'}
     ]),
+           FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
